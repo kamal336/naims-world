@@ -13,7 +13,7 @@ const Rides = () => {
 
     return (
         <Container>
-            <h1 className="text-center fw-bold text-primary my-4">Our Wonderful Rides</h1>
+            <h1 className="text-center fw-bold text-light my-4">Our Wonderful Rides</h1>
             <Row>
                 {
                     rides.map(ride=> <Ride 

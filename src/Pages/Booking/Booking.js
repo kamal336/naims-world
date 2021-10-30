@@ -21,8 +21,7 @@ const Booking = () => {
     // send data to database 
     const onSubmit = data => {
         data.email = `${user.email}`;
-        data.rideName = `${singleRide.title}`
-        console.log(data);
+        data.rideName = `${singleRide.title}`;
        fetch('https://desolate-reaches-24885.herokuapp.com/booking',{
            method: 'POST',
            headers:{
@@ -43,7 +42,7 @@ const Booking = () => {
     return (
         <div className="booking">
             <form onSubmit={handleSubmit(onSubmit)}>
-            <h1 className="text-center fw-bold text-primary mt-3">Event Register</h1>
+            <h1 className="text-center fw-bold text-light mt-3">Event Register</h1>
             {/* register your input into the hook by invoking the "register" function */}
             <input className="text-center fw-bold" defaultValue={singleRide.title} {...register("rideName")} />
     
