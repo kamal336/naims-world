@@ -4,7 +4,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Admin from './Pages/Admin/Admin';
 import Home from './Pages/Home/Home/Home';
 import ManageEvent from './Pages/ManageEvent/ManageEvent';
 import MyEvents from './Pages/MyEvents/MyEvents';
@@ -15,6 +14,7 @@ import Login from './Pages/Authentication/Login/Login';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking';
+import Footer from './Pages/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -31,15 +31,12 @@ function App() {
             <PrivateRoute path="/myevents">
               <MyEvents />
             </PrivateRoute>
-            <Route path="/eventmanage">
+            <PrivateRoute path="/eventmanage">
               <ManageEvent />
-            </Route>
-            <Route path="/admin">
-              <Admin />
-            </Route>
-            <Route path="/addevent">
+            </PrivateRoute>
+            <PrivateRoute path="/addevent">
               <AddEvent />
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login />
             </Route>
@@ -50,6 +47,7 @@ function App() {
               <NotFound />
             </Route>
           </Switch>
+          <Footer />
         </Router>
      </AuthProvider>
   );

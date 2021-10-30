@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Container, Table, Button } from 'react-bootstrap';
+import './ManageEvent.css';
 
 const ManageEvent = () => {
     const [manageEvents,setManageEvents] = useState([]);
@@ -31,15 +32,19 @@ const ManageEvent = () => {
     
      
     return (
-        <Container className="mt-5">
+        <Container className="my-5">
         <h1 className="my-3 text-light fw-bold text-center">All Event Manage List</h1>
        <Table striped bordered hover className="bg-info text-white">
                <thead>
                  <tr className="p-4">
                      <th>Ride Name</th>
+                     <th>Price</th>
                      <th>Customer Name</th>
+                     <th>Email</th>
                      <th>Age</th>
                      <th>Number</th>
+                     <th>Address</th>
+                     <th>Status</th>
                      <th>Delete User</th>
                     </tr>
                     </thead>
@@ -48,10 +53,16 @@ const ManageEvent = () => {
                         manageEvents.map(event=>(
                          <tr className="p-3">
                          <td>{event?.rideName}</td>
+                         <td>{event?.price}</td>
                          <td>{event?.name}</td>
+                         <td>{event?.email}</td>
                          <td>{event?.age}</td>
                          <td>{event?.number}</td>
-                         <td onClick={()=>handleDelete(event._id)}>Delete</td>
+                         <td>{event?.address}</td>
+                         <td>{event?.status} <Button className="btn-primary"> Aprove</Button></td>
+                         <td onClick={()=>handleDelete(event._id)}>
+                             <Button variant="danger">Delete</Button>
+                         </td>
                          </tr>
                         ))
                     }

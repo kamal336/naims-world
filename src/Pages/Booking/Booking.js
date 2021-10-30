@@ -22,6 +22,9 @@ const Booking = () => {
     const onSubmit = data => {
         data.email = `${user.email}`;
         data.rideName = `${singleRide.title}`;
+        data.price = `${singleRide.price}`;
+        data.status = "Pending";
+        console.log(data);
        fetch('https://desolate-reaches-24885.herokuapp.com/booking',{
            method: 'POST',
            headers:{

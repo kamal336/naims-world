@@ -29,12 +29,12 @@ const useFirebase = () =>{
           )
       },[])
 
-          // signout 
+    // signout 
     const logOut = () =>{
       signOut(auth)
       .then(()=>{
           console.log('successfully logout');
-          setUser({})
+          setUser({});
       }).catch(error=>{
           setError(error.message)
       })

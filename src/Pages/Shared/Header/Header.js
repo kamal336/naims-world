@@ -16,13 +16,11 @@ const Header = () => {
                     <Nav.Link className="text-white" as={Link} to="/home">Home</Nav.Link>
                     <Nav.Link className="text-white" as={Link} to="/myevents">My Events</Nav.Link>
                     <Nav.Link className="text-white" as={Link} to="/eventmanage">Manage Event</Nav.Link>
-                    <Nav.Link className="text-white" as={Link} to="/admin">Admin</Nav.Link>
                     <Nav.Link className="text-white" as={Link} to="/addevent">AddEvent</Nav.Link>
             
                   { user.email?  <Navbar.Text className="text-white border rounded px-1" >
-                       Logged as: {user.displayName}
+                       Logged as: {user.displayName} <img className="rounded-circle" width="30px" src={user.photoURL} alt="" />
                     </Navbar.Text>:<Nav.Link className="text-white" as={Link} to="/login">Login</Nav.Link>}
-
                    {user.email&&<Nav.Link className="text-white" onClick={logOut}>Logout</Nav.Link> } 
                    
                  
