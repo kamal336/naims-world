@@ -5,7 +5,7 @@ const Banner = () => {
     const [banners,setBanners] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:7000/banners')
+        fetch('https://desolate-reaches-24885.herokuapp.com/banners')
         .then(res=> res.json())
         .then(data=> setBanners(data))
     },[])

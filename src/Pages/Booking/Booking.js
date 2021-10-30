@@ -13,7 +13,7 @@ const Booking = () => {
     const history = useHistory();
 
     useEffect(()=>{
-        fetch(`http://localhost:7000/rides/${id}`)
+        fetch(`https://desolate-reaches-24885.herokuapp.com/rides/${id}`)
         .then(res=> res.json())
         .then(data=> setSingleRide(data))
     },[id])
@@ -23,7 +23,7 @@ const Booking = () => {
         data.email = `${user.email}`;
         data.rideName = `${singleRide.title}`
         console.log(data);
-       fetch('http://localhost:7000/booking',{
+       fetch('https://desolate-reaches-24885.herokuapp.com/booking',{
            method: 'POST',
            headers:{
                'content-type': 'application/json'

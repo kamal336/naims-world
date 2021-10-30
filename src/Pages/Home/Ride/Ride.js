@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Ride = (props) => {
     const {_id,title,img,desc} = props.ride;
     return (
-        <Col>
-         <Card lg={4} md={6}>
+        <Col lg={4} md={6}>
+         <Card>
             <Card.Img variant="top" src={img} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>

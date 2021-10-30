@@ -6,7 +6,7 @@ const Rides = () => {
     const [rides,setRides] = useState([]);
 
     useEffect(()=>{
-        fetch("http://localhost:7000/rides")
+        fetch("https://desolate-reaches-24885.herokuapp.com/rides")
         .then(res=> res.json())
         .then(data => setRides(data)) 
     },[])
