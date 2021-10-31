@@ -33,6 +33,7 @@ const Register = () => {
         .then((result) => {
             setIsLoading(true);
             setUser(result.user);
+            setUserName(name);
             history.push(redirect_uri)
             window.location.reload();
         })
@@ -68,7 +69,7 @@ const Register = () => {
         </form>
 
         <div className="text-center mt-4 mb-5">
-        <Link className="text-decoration-none d-block mb-4" to="/register">Already account? Please login!!</Link>
+        <Link className="text-decoration-none d-block mb-4 text-light" to="/login">Already account? Please login!!</Link>
         <span onClick={googleSignInMethod}  className="bg-light p-2 rounded me-3"><img
         width="20px" src="https://cdn-icons-png.flaticon.com/512/2702/2702602.png" alt="" /> Google</span>
 

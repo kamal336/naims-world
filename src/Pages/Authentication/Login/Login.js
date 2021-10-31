@@ -64,7 +64,7 @@ const Login = () => {
         <input onBlur={handleEmailChange} type="email" placeholder="Your email"/>
         <input onBlur={handlePasswordChange} type="password"  placeholder="Your password"/>
         
-        <input className="btn-primary" type="submit" value="Register"/>
+        <input className="btn-primary" type="submit" value="Login"/>
         </form>
 
         <div className="text-center mt-4 mb-5">
