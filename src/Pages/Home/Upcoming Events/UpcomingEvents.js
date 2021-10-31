@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import UpComing from './../Home/Upcoming/UpComing';
+import UpComing from '../Upcoming/UpComing';
 
 const UpcomingEvents = () => {
     const [upComings,setUpComings] = useState([]);
@@ -12,7 +12,7 @@ const UpcomingEvents = () => {
     },[])
     return (
         <Container>
-        <h1 className="text-center fw-bold text-light my-4">Our Wonderful Rides</h1>
+        <h1 className="text-center fw-bold text-light my-4">Our Upcoming Rides</h1>
         <Row>
             {
                 upComings.map(upcoming=> <UpComing 

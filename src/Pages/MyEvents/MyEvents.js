@@ -35,7 +35,7 @@ const MyEvents = () => {
     return (
        <Container className="my-5">
            <h1 className="my-3 text-light fw-bold text-center">My Event List</h1>
-          <Table striped bordered hover className="bg-info text-white">
+          <Table responsive="md" striped bordered hover className="bg-info text-white">
                   <thead  className="p-3">
                     <tr>
                         <th>Ride Name</th>

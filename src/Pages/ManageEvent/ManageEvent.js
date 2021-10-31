@@ -34,7 +34,7 @@ const ManageEvent = () => {
     return (
         <Container className="my-5">
         <h1 className="my-3 text-light fw-bold text-center">All Event Manage List</h1>
-       <Table striped bordered hover className="bg-info text-white">
+       <Table striped bordered hover responsive="md" className="bg-info text-white">
                <thead>
                  <tr className="p-4">
                      <th>Ride Name</th>

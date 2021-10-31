@@ -20,10 +20,10 @@ const Banner = () => {
                 alt="First slide"
                 />
                 <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h2 className="fw-bold">Naim's World Theme Park</h2>
+                <h5 className="fw-bold">It's a amazing theme park in the world and very enjoyable day you can spend.</h5>
                 </Carousel.Caption>
-            </Carousel.Item>
+                </Carousel.Item>
             <Carousel.Item interval={500}>
                 <img style={{height:"670px"}}
                 className="d-block w-100"
@@ -31,8 +31,8 @@ const Banner = () => {
                 alt="Second slide"
                 />
                 <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h2 className="fw-bold">Naim's World Theme Park</h2>
+                <h5 className="fw-bold">It's a amazing theme park in the world and very enjoyable day you can spend.</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -42,8 +42,8 @@ const Banner = () => {
                 alt="Third slide"
                 />
                 <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <h2 className="fw-bold">Naim's World Theme Park</h2>
+                <h5 className="fw-bold">It's a amazing theme park in the world and very enjoyable day you can spend.</h5>
                 </Carousel.Caption>
             </Carousel.Item>
             </Carousel>

@@ -7,8 +7,8 @@ const UpComing = (props) => {
         <Col lg={3} md={6}>
          <Card className="mt-3">
             <Card.Img variant="top" src={img} />
-            <Card.Body>
-                <Card.Title className="text-primary fw-bold">{title}</Card.Title>
+            <Card.Body className="bg-primary">
+                <Card.Title className="text-warning fw-bold text-center">{title}</Card.Title>
             </Card.Body>
             </Card>
         </Col>

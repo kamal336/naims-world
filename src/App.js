@@ -15,6 +15,7 @@ import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Booking/Booking';
 import Footer from './Pages/Shared/Footer/Footer';
+import Register from './Pages/Authentication/Register/Register';
 
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
             <PrivateRoute path="/booking/:id">
               <Booking />
             </PrivateRoute>
+            <Route path="/register">
+              <Register />
+            </Route>
             <Route path="*">
               <NotFound />
             </Route>
