@@ -7,7 +7,7 @@ const Footer = () => {
             <Container>
               <Row className="text-center">
               <Col lg={4}>
-                    <h3>Naim's World</h3>
+                    <h4 style={{fontFamily:'-moz-initial',fontSize:"24px",fontWeight:"500"}}>Naim's World</h4>
                     <p>Its a amazing and wonderful theme park</p>
                 </Col>
                 <Col lg={4}>
@@ -21,6 +21,9 @@ const Footer = () => {
                  <p>About</p>
                  <p>About</p>
                 </Col>
+              </Row>
+              <Row className="text-center">
+                  <p>CopyRight &copy; 2021 Naim's World. All Rights Reserved.</p>
               </Row>
             </Container>
         </div>
