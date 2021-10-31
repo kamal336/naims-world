@@ -59,7 +59,7 @@ const Booking = () => {
             {/* errors will return when field validation fails  */}
             {errors.exampleRequired && <span>This field is required</span>}
             
-            <input className="btn-primary" type="submit" />
+            <input className="btn-primary" type="submit" value="Book"/>
             </form>
         </div>
     );
