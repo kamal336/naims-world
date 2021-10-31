@@ -11,7 +11,7 @@ const AddEvent = () => {
 
         console.log(data);
 
-       fetch('https://desolate-reaches-24885.herokuapp.com/booking',{
+       fetch('https://desolate-reaches-24885.herokuapp.com/addride',{
            method: 'POST',
            headers:{
                'content-type': 'application/json'
@@ -36,6 +36,8 @@ const AddEvent = () => {
             <input type="text" {...register("title")} placeholder="Ride name"/>
         
             <input type="text" {...register("desc", { required: true })} placeholder="Ride description"/>
+
+            <input type="number" {...register("price", { required: true })} placeholder="Ride price"/>
 
             <input type="text" {...register("img", { required: true })} placeholder="Image Link"/>
             {/* errors will return when field validation fails  */}
