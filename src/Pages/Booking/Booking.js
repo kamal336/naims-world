@@ -44,7 +44,6 @@ const Booking = () => {
 
     return (
         <div className="booking">
-            <h1>This is booking form</h1>
             <form onSubmit={handleSubmit(onSubmit)}>
             <h1 className="text-center fw-bold text-light mt-3">Event Register</h1>
             {/* register your input into the hook by invoking the "register" function */}

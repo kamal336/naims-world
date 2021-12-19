@@ -8,7 +8,7 @@ const Login = () => {
     const location = useLocation()
     const history = useHistory();
     const redirect_uri = location.state?.from || '/home';
-
+    // state 
     const [email,setEmail] = useState('');
     const [password,setPassword] = useState('');
   
@@ -63,10 +63,9 @@ const Login = () => {
 
         <input onBlur={handleEmailChange} type="email" placeholder="Your email"/>
         <input onBlur={handlePasswordChange} type="password"  placeholder="Your password"/>
-        
         <input className="btn-primary" type="submit" value="Login"/>
         </form>
-
+     
         <div className="text-center mt-4 mb-5">
          <Link className="text-decoration-none d-block mb-4 text-light" to="/register">New in Naim's World? Creat an account!!</Link>
         <span onClick={googleSignInMethod}  className="bg-light p-2 rounded me-3"><img
